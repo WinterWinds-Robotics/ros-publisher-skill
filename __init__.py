@@ -11,8 +11,7 @@ class RosPublisher(MycroftSkill):
     @intent_file_handler('publisher.ros.intent')
     def handle_publisher_ros(self, message):
         self.speak_dialog('publisher.ros')
-        self.pub(message)
-        rospy.loginfo(message)
+        self.pub.publish(message)
 
 
 def create_skill():
