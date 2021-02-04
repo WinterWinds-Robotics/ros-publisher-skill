@@ -1,5 +1,6 @@
 from mycroft import MycroftSkill, intent_file_handler
 import rospy
+from std_msgs.msg import String
 
 class RosPublisher(MycroftSkill):
     def __init__(self):
